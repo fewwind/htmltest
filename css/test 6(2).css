@@ -1,0 +1,22 @@
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul li{
+	float:left; /*float:left - 使用 float 来把块元素滑向彼此。*/
+}
+ul li a:link,ul li a:visited{
+	display:block;
+	width:200px;
+	background-color:yellow;
+	color:gray;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+}
+ul li a:hover,ul li a:active{
+	background-color:red;
+}	

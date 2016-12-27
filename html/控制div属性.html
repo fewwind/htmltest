@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>控制div属性</title>
+<style type="text/css">
+	#outer{
+		text-align:center;
+
+	}
+	.div1{
+		width:200px;
+		height:200px;
+		background-color:yellow;
+		margin:20px auto;
+	}
+
+</style>
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+<script>
+    $(document).ready(function(){
+    	$(".b1").click(function(){
+    		$(".div1").animate({width:'400px'});
+    			
+    	});
+    });
+    $(document).ready(function(){
+    	$(".b2").click(function(){
+    		$(".div1").animate({height:"400px"});
+    	});
+    });
+    $(document).ready(function(){
+    	$(".b3").click(function(){
+    		$(".div1").css({background:"red"});
+    	});
+    });
+
+
+
+
+
+	$(document).ready(function(){
+		$(".b4").click(function(){
+			$(".div1").hide();
+		});
+	});
+	$(document).ready(function(){
+		$(".b5").click(function(){
+			$(".div1").show();
+		});
+	});
+
+
+	function changeColor(){
+		var x=document.getElementById("div1");
+		x.style.background="red";
+	}
+</script>
+</head>
+<body>
+<div id="outer">
+	<button type="button" class="b1">wider</button>
+	<button type="button" class="b2">higher</button>
+	<button type="button" class="b3" onclick=changeColor()>change color</button>
+	<button type="button" class="b4">hide</button>
+	<button tye="button" class="b5">show</button>
+	<div class="div1" id="div"></div>
+</div>
+</body>
+</html>

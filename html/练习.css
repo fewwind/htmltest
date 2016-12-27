@@ -1,0 +1,39 @@
+body{
+	background-color:#b5a789;
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:small;
+	margin:0px;
+}
+div#navigation{
+	float:right;
+	
+}
+.findus{
+	float:right;
+}
+div#tableContainer{
+	display:table;
+	border-spacing:10px;
+	background-color:white;
+}
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul li{
+	float:left; 
+}
+ul li a:link,ul li a:visited{
+	display:block;
+	width:50px;
+	color:gray;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+}
+ul li a:hover,ul li a:active{
+	background-color:red;
+}

@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>淘宝网 - 我的购物车</title>
+<link type="text/css" rel="stylesheet" href="F:/Test/html/淘宝demo/taobao demo.css" />
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+<script src="F:/Test/html/淘宝demo/taobao demo.js" ></script>
+</head>
+<body>
+	<div class="main">
+		<div class="site-nav">
+			<div class="nav">
+				<ul class="nav-left">
+					<li><a href="#" class="nav-account">Linda Chen</a></li>
+					<li><a href="#" class="nav-msg">消息</a></li>
+					<li><a href="#" class="nav-hangon">手机逛淘宝</a></li>
+				</ul>
+				<ul class="nav-right">
+					<li><a href="#" class="nav-index">淘宝网首页</a></li>
+					<li cass="nav_myTao">
+					<a href="#" class="nav-myTao">我的淘宝</a>
+						<ul class="nav-myTao-nav">
+							<li><a href="#">已买到的宝贝</a></li>
+							<li><a href="#">我的足迹</a></li>
+							<li><a href="#">爱逛街</a></li>
+							<li><a href="#">淘宝达人</a></li>
+							<li><a href="#">新欢</a></li>
+						</ul>
+					</li>
+					<li class="nav_collection">
+					<a href="#" class="nav-collection">收藏夹</a>
+						<ul class="nav-myTao-nav">
+							<li><a href="#">收藏的宝贝</a></li>
+							<li><a href="#">收藏的店铺</a></li>
+						</ul>
+					</li>
+					<li class="nav_sellCenter">
+					<a href="#" class="nav-sellCenter">卖家中心</a>
+						<ul class="nav-myTao-nav">
+							<li><a href="#">免费开店</a></li>
+							<li><a href="#">已卖出的宝贝</a></li>
+							<li><a href="#">出售中的宝贝</a></li>
+							<li><a href="#">卖家服务市场</a></li>
+							<li><a href="#">卖家服务中心</a></li>
+						</ul>
+					</li>
+					<li class="nav_contact">
+					<a href="#" class="nav-contact">联系客服</a>
+						<ul class="nav-myTao-nav">
+							<li><a href="#">消费者客服</a></li>
+							<li><a href="#">卖家客服</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<a href="#"></a>
+				<div class="header-search">
+					<input type="text" class="header-search-input" placeholder="请输入内容" autocomplete="off" />
+					<button type="submit">搜索</button>
+					<div class="list">
+						<ul>
+							<li>宝贝</li>
+							<li>天猫</li>
+							<li>店铺</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="tbBar">
+					<ul class="switch-cart">
+						<li class="btn-switch-cart switch-cart-0 selectColumn">
+							<a href="#" class="btn-switch-href">
+								<em>全部商品</em>
+								<span class="number">7</span>
+								<span class="pipe"></span>
+							</a>
+						</li>
+						<li class="btn-switch-cart switch-cart-1">
+							<a href="#" class="btn-switch-href btn-switch-color">
+								<em>降价商品</em>
+								<span class="number">0</span>
+								<span class="pipe"></span>
+							</a>
+						</li>
+						<li class="btn-switch-cart switch-cart-2">
+							<a href="#" class="btn-switch-href btn-switch-color">
+								<em>库存紧张</em>
+								<span class="number">0</span>
+								<span class="pipe pipe-display"></span>
+							</a>
+						</li>
+					</ul>
+					<div class="cart-sum">
+						<span>已选商品（不含运费）</span>
+						<strong class="price">
+							￥<span class="total-symbol">0.00</span>
+						</strong>
+						<a href="#" class="submit-btn btn-common">结算</a>
+					</div>
+					<div class="wrap-line"></div>
+				</div>
+				<div class="tbMain">
+					<div class="commodityColumn">
+						<div class="th-chk">
+							<div class="selectAll" id="selectAll">
+								<input type="checkbox" name="selectAllchkbox" id="selectAllchkbox" class="allSelected1" autocomplete="off" />
+								<label for="selectAllchkbox">全选</label>
+							</div>
+						</div>
+						<div class="th-inner">
+							<div class="commodityMsg">
+								<div>商品信息</div>
+							</div>
+						</div>
+						<div class="th-space">
+							<div class="td-inner">&nbsp;</div>
+						</div>
+						<div class="th-price">
+							<div class="td-inner">单价</div>s
+						</div>
+						<div class="th-amount">
+							<div class="td-inner">数量</div>
+						</div>
+						<div class="th-sum">
+							<div class="td-inner">金额</div>
+						</div>
+						<div class="th-operation">
+							<div class="td-inner">操作</div>
+						</div>
+					</div>
+					<div class="commodityContainer">
+					  <div vlass="mainCommodity">
+						<div class="shopInfo">
+							<div class="shopMsg">
+								<input type="checkbox" name="shopMsg" class="shopMsg-input" id="zhangjunyaxiaomeimei" autocomplete="off" />
+								<label for="zhangjunyaxiaomeimei">
+								    <img src="F:/Test/html/淘宝demo/images/tianmao-icon.png" />
+								    店铺：
+								</label>
+								<a href="#">张君雅小妹妹旗舰</a>
+							</div>
+						</div>
+						<div class="commodityInfo">
+							<ul>
+								<li class="td-chk">
+									<div class="td-inner">
+										<input type="checkbox" name="checkbox" autocomplete="off" />
+									</div>
+								</li>
+								<li class="td-item">
+									<div class="td-inner">
+										<a href="#" class="zhangjunya"><img src="F:/Test/html/淘宝demo/images/zhangjunya.png" /></a>
+										<div class="item-info">
+											<div class="item-basis-info">
+												<a href="#">张君雅小妹妹12包进口零食大礼包甜甜圈干脆面点心面零食组合正品</a>
+											</div>
+											<div class="item-other-info">
+												<div class="item-other-space"></div>
+												<div class="item-other-list">
+													<a href="#" title="支持信用卡支付">
+														<img src="F:/Test/html/淘宝demo/images/xcard.png" class="bandCard" />
+													</a>
+													<a href="#" class="sevenDays" title="消费者保障服务，卖家承诺7天退换">
+														<img src="F:/Test/html/淘宝demo/images/sevendays.png" class="sevenDays" />
+													</a>
+													<a href="#" title="消费者保障服务，卖家承诺如实描述">
+														<img src="F:/Test/html/淘宝demo/images/accdescribe.png" class="accDescribe" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="td-info">
+									<div class="td-info-msg">
+										<p>口味：12包（万人选择）</p>
+									</div>
+								</li>
+								<li class="td-price">
+									<li class="td-inner">
+										<p class="non-discount">￥79.00</p>
+										<p class="discount">￥<span>35.90</span></p>
+										<div class="promotion">
+											卖家促销
+											<i class="promotionIcon"></i>
+										</div>
+										<div class="proSlidedown">
+											<p class="newPro">卖家促销：聚划算</p>
+											<p>优惠：￥43.10</p>
+										</div>
+									</li>
+								</li>
+								<li class="td-amount">
+									<div class="item-amount">
+										<a href="#" class="amount-left amount-color">-</a>
+										<input type="text" name="amountNum" value="1" autocomplete="off" />
+										<a href="#" class="amount-right">+</a>
+									</div>
+									<div class="stock">22536</div>
+									<div class="outNum">
+										<span class="instr">限购</span>
+										<span class="stockNum">20</span>
+										<em>件</em>
+									</div>
+								</li>
+								<li class="td-sum">
+									<em>￥</em>
+									<span>35.90</span>
+								</li>
+								<li class="td-operation">
+									<a href="#" class="delete">删除</a>
+								</li>
+							</ul>
+						</div>
+					  </div>
+					  <div class="mainCommodity">
+						<div class="shopInfo">
+							<div class="shopMsg">
+								<input type="checkbox" name="shopMsg" class="shopMsg-input" id="eastpakbag" autocomplete="off" />
+								<label for="eastpakbag">
+								    <img src="F:/Test/html/淘宝demo/images/tianmao-icon.png" />
+								    店铺：
+								</label>
+								<a href="#">EASTPAK旗舰店</a>
+							</div>
+						</div>
+						<div class="commodityInfo">
+							<ul>
+								<li class="td-chk">
+									<div class="td-inner">
+										<input type="checkbox" name="checkbox" autocomplete="off" />
+									</div>
+								</li>
+								<li class="td-item">
+									<div class="td-inner">
+										<a href="#" class="eastpak"></a>
+										<div class="item-info">
+											<div class="item-basis-info">
+												<a href="#">
+												    <img src="F:/Test/html/淘宝demo/images/eastpak.png" />
+													EASTPAK2016依斯柏新品背包 迷你时尚儿童双肩包 潮流小学生书包
+												</a>
+											</div>
+											<div class="item-other-info">
+												<div class="item-other-space"></div>
+												<div class="item-other-list">
+													<a href="#" title="支持信用卡支付">
+														<img src="F:/Test/html/淘宝demo/images/xcard.png" class="bandCard" />
+													</a>
+													<a href="#" title="消费者保障服务，卖家承诺7天退换">
+														<img src="F:/Test/html/淘宝demo/images/sevendays.png" class="sevenDays" />
+													</a>
+													<a href="#" title="消费者保障服务，卖家承诺如实描述">
+														<img src="F:/Test/html/淘宝demo/images/accdescribe.png" class="accDescribe" />
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="td-info">
+									<div class="td-info-msg">
+										<p>颜色分类：EK04329M</p>
+									</div>
+								</li>
+								<li class="td-price">
+									<div class="td-inner">
+										<p class="non-discount">￥430.00</p>
+										<p class="discount">￥<span>269.00</span></p>
+										<div class="promotion">
+											卖家促销
+											<i class="promotionIcon"></i>
+										</div>
+										<div class="proSlidedown">
+											<p class="newPro">卖家促销：新品发售</p>
+											<p>优惠：￥161.00</p>
+										</div>
+									</div>
+								</li>
+								<li class="td-amount">
+									<div class="item-amount">
+										<a href="#" class="amount-left amount-color">-</a>
+										<input type="text" name="amountNum" value="1" autocomplete="off" />
+										<a href="#" class="amount-right">+</a>
+									</div>
+									<div class="stock">
+										1004
+									</div>
+									<div class="outNum">
+										<span class="instr">最多只能购买</span>
+										<span class="stockNum"></span>
+										<em>件</em>
+									</div>
+								</li>
+								<li class="td-sum">
+									<em>￥</em>
+									<span>269.00</span>
+								</li>
+								<li class="td-operation">
+									<p><a href="#" class="delete">删除</a></p>
+								</li>
+							</ul>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="footer">
+				<div class="all-selected">
+					<input type="checkbox" name="all-selected" id="all-selected" class="allSelected2" autocomplete="off"  />
+					<label for="all-selected">全选</label>
+				</div>
+				<div class="operation">
+					<a href="#" class="delete">删除</a>
+					<a href="#">移入收藏夹</a>
+					<a href="#">分享</a>
+				</div>
+				<div class="float-bar-right">
+					<div class="amount-sum">
+						<span>已选商品</span>
+						<em class="totalSum">0</em>
+						<span>件</span>
+					</div>
+					<div class="price-sum">
+						<span>合计（不含运费）：</span>
+						<span class="moneySym">￥</span>
+						<em class="total-sum">0.00</em>
+					</div>
+					<div class="btn-area">
+						<a href="#" class="btn-common" id="btn-sum">结算</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

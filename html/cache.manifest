@@ -1,0 +1,12 @@
+CACHE MANIFEST
+#v0.11
+
+CACHE:
+js/app.js
+css/style.css
+
+NETWORK:
+resource/logo.png
+
+FALLBACK:
+/ /offline.html

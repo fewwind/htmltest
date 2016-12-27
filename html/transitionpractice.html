@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>transition 五种function</title>
+<style type="text/css">
+	.bar{
+		width:200px;
+		height:100px;
+		background-color:yellow;
+		margin:10px;
+	}
+	.bar:hover{
+		width:500px;
+	}
+	#div1{
+		transition:width 5s ease;
+	}
+	#div2{
+		transition:width 5s linear;
+	}
+	#div3{
+		transition:width 5s ease-in;
+	}
+	#div4{
+		transition:width 5s ease-out;
+	}
+	#div5{
+		transition:width 5s ease-in-out;
+	}
+</style>
+</head>
+<body>
+<div id="div">
+	<div class="bar" id="div1">ease</div>
+	<div class="bar" id="div2">linear</div>
+	<div class="bar" id="div3">ease-in</div>
+	<div class="bar" id="div4">ease-out</div>
+	<div class="bar" id="div5">ease-in-out</div>
+</div>
+
+</body>
+</html>

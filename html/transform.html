@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>transform 的用法</title>
+<style type="text/css">
+	#outer{
+		perspective:800;
+		-webkit-perspective:800;
+		perspective-origin:50% 50%;
+		-webkit-perspective-origin:50% 50%;
+		transform-style:perserve-3d;
+		-webkit-transform-style:-webkit-perserve-3d;
+
+	}
+	#div1{
+		width:200px;
+		height:200px;
+		background-color:yellow;
+		margin:100px auto;
+		transform:rotateZ(45deg);
+		-webkit-transform:rotateX(45deg);
+	}
+</style>
+</head>
+<body>
+<div id="outer">
+	<div id="div1"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>rotate</title>
+<style type"text/css>
+	#outer{
+		-webkit-perspective:800;
+		-webkit-perspective-origin:50% 50%;
+		-webkit-transform-style:-webkit-perserve-3d;
+	}
+	#div1{
+		width:200px;
+		height:200px;
+		background-color:yellow;
+		margin:0 auto;
+	}
+	#div2{
+		font-family:"serif"、"sans-serif"、"cursive"、"fantasy"、"monospace";
+		font-size:16px;
+		font-weight:bold;
+	}
+	#div2 .range-control{
+		width:500px;
+	}
+</style>
+<script>
+	function rotate(){
+		var x=document.getElementById("rotateX").value;
+		var y=document.getElementById("rotateY").value;
+		var z=document.getElemnetById("rotateZ").value;
+
+		document.getElemnetById("div1").style.transform="rotateX("+x+"deg) rotateY("+y+"deg) rotateZ("+z+"deg)";
+
+		document.getElementById("degX-span").innerText=x;
+		document.getElementById("degY-span").innerText=y;
+		document.getElementById("degZ-span").innerText=z;
+	}
+</script>
+</head>
+<body>
+<div id="outer">
+	<div id="div1"></div>
+</div>
+<div id="div2">
+	<p>rotateX:<span id="degX-span">0</span> deg</p>
+	<input type="range" min="-360" max="360" id="roateX" class="range-control" value="0" onChange=rotate() />
+	<p>rotateY:<span id="degY-span">0</span> deg</p>
+	<input type="range" min="-360" max="360" id="rotateY" class="range-control" value="0" onChange=rotate() />
+	<p>rotateZ:<span id="degZ-span">0</span> deg</p>
+	<input type="range" min="-360" max="360" id="roytateZ" class="range-control" value="0" onChange=rotate() />
+</div>
+
+</body>
+</html>

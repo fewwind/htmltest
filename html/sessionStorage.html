@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>HTML5教程之本地存储sessionStorage</title>
+	
+	<script>
+		window.onload=function(){
+			alert("Hello world.");
+			var msg=document.getElementById("msg");
+			var setData=document.getElementById("setData");
+			var getData=document.getElementById("getData");
+
+			setData.onclick=function(){
+				if(msg.value){
+					sessionStorage.setItem("data",msg.value);
+					alert("信息已保存到data字段里");
+				}
+				else{
+					alert("信息不能为空")；
+				}
+			}
+			getData.onclick=function(){
+				var msg=sessionStorage.getItem("data");
+				if(msg){
+					alert("data字段中的值为:"+msg);
+				}
+				else{
+					alert("data字段无值!!!");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="msg" />
+	<input type="button" id="setData" value="保存数据" />
+	<input type="button" id="getData" value="获取数据" />
+</body>
+
+
+</html>

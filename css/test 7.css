@@ -1,0 +1,36 @@
+
+		.outer{
+			border:2px solid gray;
+			width:600px;
+			/*方法一：height:200px;*/
+			/*方法二：float:left;*/
+			/*方法四：overflow:auto/hidden;*/
+		}
+		/*方法五：
+		.outer:after{
+			clear:both;
+			content:".";
+			display:block;
+			width:0;
+			height:0;
+			visibility:hidden;
+		}*/
+		.left{
+			float:left;
+			background-color:yellow;
+			width:200px;
+			height:100px;
+		}
+		.middle{
+			float:left;
+			background-color:red;
+			width:150px;
+			height:150px;
+		}
+		.right{
+			float:left;
+			background-color:blue;
+			width:200px;
+			height:200px;
+		}
+	

@@ -1,0 +1,23 @@
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:6px;  /*如果您只为 a 元素设置内边距（而不设置 ul 元素），那么链接会出现在 ul 元素之外。
+	                   所以，我们为 ul 元素添加了 top 和 bottom 内边距。*/
+    padding-bottom:6px;
+}
+ul li{
+	display:inline;
+}
+ul li a:link,ul li a:visited{
+	background-color:#98bf21;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding:6px;
+	text-align:center;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+ul li a:hover,ul li a:active{
+	background-color:red;
+}
